@@ -1,8 +1,12 @@
 # A Temperature conversion Shiny app
 library(shiny)
-shinyUI(fluidPage(
-  titlePanel("A simple Temperature Conversion Application"),
-  br(),
+
+shinyUI(
+  
+  navbarPage("A simple Temperature Conversion Application",
+ # multi-page user-interface with a navigation bar.          
+  tabPanel("Temperature Conversion",
+
   sidebarLayout(
     sidebarPanel(
       h3("Move the slider to input temperature"),
@@ -29,5 +33,13 @@ shinyUI(fluidPage(
       ),
       plotOutput("plot1")
     )
-  )
-))
+  )),
+ 
+ tabPanel("About",
+          mainPanel(
+            includeMarkdown("about.md")
+          )
+ ) # end of "About" tab panel
+ 
+)
+)

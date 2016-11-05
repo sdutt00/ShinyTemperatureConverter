@@ -6,6 +6,10 @@ The input temperature can be entered using the slider input and the value can be
 
 The output is presented in the main panel. Both the input and the converted temperature is shown along with the correct units. As well as a bar chart also graphically shows the conversion. The input is always plotted in Blue color and the output is in RED.
 
+## How to use the Application
+1. Select the conversion you want to do by selecting the Radio Button
+2. Input the temperature you want converted by moving the slider
+
 
 Date updated: 11/05/2016
   
